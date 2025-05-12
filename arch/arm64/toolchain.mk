@@ -2,7 +2,7 @@ ifndef ARCH_arm64_TOOLCHAIN_INCLUDED
 ARCH_arm64_TOOLCHAIN_INCLUDED := 1
 
 ifndef ARCH_arm64_TOOLCHAIN_PREFIX
-ARCH_arm64_TOOLCHAIN_PREFIX := aarch64-elf-
+ARCH_arm64_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
 FOUNDTOOL=$(shell which $(ARCH_arm64_TOOLCHAIN_PREFIX)gcc)
 ifeq ($(FOUNDTOOL),)
 ARCH_arm64_TOOLCHAIN_PREFIX := aarch64-linux-android-
