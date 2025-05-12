@@ -9,8 +9,16 @@ The main goal is:
 
 
 # Instructions
-* Open up the Github codespaces and hopefully that should be it (all the dependencies should be pre-installed).
-* On the terminal, run `scripts/do-qemuarm -6` and that should compile LK and start qemu and boot to prompt
+* Open up the Github codespaces.
+* Install dependencies:
+  * `sudo apt update`
+  * `sudo apt upgrade`
+  * `sudo apt install qemu-system-aarch64`
+  * `sudo apt install gcc-aarch64-linux-gnu`
+  * `sudo apt install crossbuild-essential-arm64`
+* On the terminal, run `scripts/do-qemuarm -6` and that should compile LK and start qemu and boot to prompt.
+  * Run `help` on prompt to check if its working
+* Ctrl A + X to quit QEMU
 
 
 # Disclaimer
