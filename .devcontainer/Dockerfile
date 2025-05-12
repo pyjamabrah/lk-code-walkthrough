@@ -12,7 +12,7 @@ RUN sudo apt-get install --no-install-recommends -y \
     gcc-aarch64-linux-gnu \
     qemu-system-aarch64 \
     crossbuild-essential-arm64 \
-    make \
+    make
 
 # terminal colors with xterm
 ENV TERM xterm
