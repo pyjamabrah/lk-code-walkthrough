@@ -1,0 +1,557 @@
+make[1]: Entering directory '/workspaces/lk-code-walkthrough'
+make[2]: Entering directory '/workspaces/lk-code-walkthrough'
+TOOLCHAIN_PREFIX = aarch64-linux-gnu-
+LINKER_TYPE=bfd
+COMPILER_TYPE=gcc
+Checking if -Wnonnull-compare is supported: yes
+Checking if -Wasm-operand-widths is supported: no
+
+PROJECT = qemu-virt-arm64-test
+PLATFORM = qemu-virt-arm
+TARGET = qemu-virt-arm
+ARCH = arm64
+TOOLCHAIN_PREFIX = aarch64-linux-gnu-
+DEBUG = 2
+
+including app app/inetsrv app/shell app/stringtests app/tests arch arch/test dev dev/bus/pci dev/bus/pci/drivers dev/interrupt/arm_gic dev/power/psci dev/timer/arm_generic dev/uart/pl011 dev/virtio/9p dev/virtio/block dev/virtio/gpu dev/virtio/net kernel lib/aes lib/aes/test lib/cbuf lib/cksum lib/debugcommands lib/fdtwalk lib/fs lib/fs/9p lib/fs/ext2 lib/fs/fat lib/fs/memfs lib/fs/spifs lib/minip lib/partition lib/uefi lib/unittest lib/version platform target
+including dev/net/e1000 dev/virtio kernel/vm lib/bcache lib/bio lib/console lib/debug lib/fdt lib/fixed_point lib/fs/fat/test lib/fs/spifs/test lib/fs/test lib/gfx lib/heap lib/iovec lib/libc lib/libcpp lib/pool lib/tftp
+including lib/heap/dlmalloc lib/io lib/libc/test lib/libm
+Checking if -Wmaybe-uninitialized is supported: yes
+LIBGCC = /usr/lib/gcc-cross/aarch64-linux-gnu/9/libgcc.a
+GLOBAL_COMPILEFLAGS = -g -include ./build-qemu-virt-arm64-test/config.h -Wextra -Wall -Werror=return-type -Wshadow -Wdouble-promotion -Wno-multichar -Wno-unused-parameter -Wno-unused-function -Wno-unused-label -fno-common -ffreestanding -Wno-nonnull-compare
+GLOBAL_OPTFLAGS = -O2
+ARCH_COMPILEFLAGS =   -fno-omit-frame-pointer
+ARCH_COMPILEFLAGS_FLOAT = 
+ARCH_COMPILEFLAGS_NOFLOAT = -mgeneral-regs-only
+
+generating build-qemu-virt-arm64-test/platform/qemu-virt-arm/module_config.h
+generating build-qemu-virt-arm64-test/config.h
+generating build-qemu-virt-arm64-test/arch/arm64/module_config.h
+generating build-qemu-virt-arm64-test/top/module_config.h
+generating build-qemu-virt-arm64-test/app/module_config.h
+generating build-qemu-virt-arm64-test/app/inetsrv/module_config.h
+generating build-qemu-virt-arm64-test/app/shell/module_config.h
+generating build-qemu-virt-arm64-test/app/stringtests/module_config.h
+generating build-qemu-virt-arm64-test/app/tests/module_config.h
+generating build-qemu-virt-arm64-test/arch/module_config.h
+generating build-qemu-virt-arm64-test/arch/test/module_config.h
+generating build-qemu-virt-arm64-test/dev/module_config.h
+generating build-qemu-virt-arm64-test/dev/bus/pci/module_config.h
+generating build-qemu-virt-arm64-test/dev/interrupt/arm_gic/module_config.h
+generating build-qemu-virt-arm64-test/dev/power/psci/module_config.h
+generating build-qemu-virt-arm64-test/dev/timer/arm_generic/module_config.h
+generating build-qemu-virt-arm64-test/dev/uart/pl011/module_config.h
+generating build-qemu-virt-arm64-test/dev/virtio/9p/module_config.h
+generating build-qemu-virt-arm64-test/dev/virtio/block/module_config.h
+generating build-qemu-virt-arm64-test/dev/virtio/gpu/module_config.h
+generating build-qemu-virt-arm64-test/dev/virtio/net/module_config.h
+generating build-qemu-virt-arm64-test/kernel/module_config.h
+generating build-qemu-virt-arm64-test/external/lib/aes/module_config.h
+generating build-qemu-virt-arm64-test/external/lib/aes/test/module_config.h
+generating build-qemu-virt-arm64-test/lib/cbuf/module_config.h
+generating build-qemu-virt-arm64-test/external/lib/cksum/module_config.h
+generating build-qemu-virt-arm64-test/lib/debugcommands/module_config.h
+generating build-qemu-virt-arm64-test/lib/fdtwalk/module_config.h
+generating build-qemu-virt-arm64-test/lib/fs/module_config.h
+generating build-qemu-virt-arm64-test/lib/fs/9p/module_config.h
+generating build-qemu-virt-arm64-test/lib/fs/ext2/module_config.h
+generating build-qemu-virt-arm64-test/lib/fs/fat/module_config.h
+generating build-qemu-virt-arm64-test/lib/fs/memfs/module_config.h
+generating build-qemu-virt-arm64-test/lib/fs/spifs/module_config.h
+generating build-qemu-virt-arm64-test/lib/minip/module_config.h
+generating build-qemu-virt-arm64-test/lib/partition/module_config.h
+generating build-qemu-virt-arm64-test/lib/uefi/module_config.h
+generating build-qemu-virt-arm64-test/lib/unittest/module_config.h
+generating build-qemu-virt-arm64-test/buildid.h
+generating build-qemu-virt-arm64-test/lib/version/module_config.h
+generating build-qemu-virt-arm64-test/platform/module_config.h
+generating build-qemu-virt-arm64-test/target/module_config.h
+generating build-qemu-virt-arm64-test/dev/net/e1000/module_config.h
+generating build-qemu-virt-arm64-test/dev/virtio/module_config.h
+generating build-qemu-virt-arm64-test/kernel/vm/module_config.h
+generating build-qemu-virt-arm64-test/lib/bcache/module_config.h
+generating build-qemu-virt-arm64-test/lib/bio/module_config.h
+generating build-qemu-virt-arm64-test/lib/console/module_config.h
+generating build-qemu-virt-arm64-test/lib/debug/module_config.h
+generating build-qemu-virt-arm64-test/external/lib/fdt/module_config.h
+generating build-qemu-virt-arm64-test/lib/fixed_point/module_config.h
+generating build-qemu-virt-arm64-test/lib/fs/fat/test/module_config.h
+generating build-qemu-virt-arm64-test/lib/fs/spifs/test/module_config.h
+generating build-qemu-virt-arm64-test/lib/fs/test/module_config.h
+generating build-qemu-virt-arm64-test/lib/gfx/module_config.h
+generating build-qemu-virt-arm64-test/lib/heap/module_config.h
+generating build-qemu-virt-arm64-test/lib/iovec/module_config.h
+generating build-qemu-virt-arm64-test/lib/libc/module_config.h
+generating build-qemu-virt-arm64-test/lib/libcpp/module_config.h
+generating build-qemu-virt-arm64-test/lib/pool/module_config.h
+generating build-qemu-virt-arm64-test/lib/tftp/module_config.h
+generating build-qemu-virt-arm64-test/external/lib/heap/dlmalloc/module_config.h
+generating build-qemu-virt-arm64-test/lib/io/module_config.h
+generating build-qemu-virt-arm64-test/lib/libc/test/module_config.h
+generating build-qemu-virt-arm64-test/external/lib/libm/module_config.h
+generating build-qemu-virt-arm64-test/system-onesegment.ld
+
+compiling platform/qemu-virt-arm/debug.c
+compiling platform/qemu-virt-arm/platform.c
+compiling arch/arm64/arch.c
+compiling arch/arm64/exceptions_c.c
+compiling arch/arm64/fpu.c
+compiling arch/arm64/thread.c
+compiling arch/arm64/mp.c
+compiling arch/arm64/mmu.c
+compiling arch/arm64/asm.S
+compiling arch/arm64/exceptions.S
+compiling arch/arm64/spinlock.S
+compiling arch/arm64/start.S
+compiling arch/arm64/cache-ops.S
+compiling top/init.c
+compiling top/main.c
+compiling app/app.c
+compiling app/inetsrv/inetsrv.c
+compiling app/shell/shell.c
+compiling app/stringtests/string_tests.c
+compiling app/tests/cache_tests.c
+compiling app/tests/cbuf_tests.c
+compiling app/tests/clock_tests.c
+compiling app/tests/fibo.c
+compiling app/tests/mem_tests.c
+compiling app/tests/tests.c
+compiling app/tests/thread_tests.c
+compiling app/tests/port_tests.c
+compiling app/tests/v9p_tests.c
+compiling app/tests/v9fs_tests.c
+compiling app/tests/benchmarks.c
+compiling app/tests/float.c
+compiling app/tests/float_test_vec.c
+compiling app/tests/printf_tests.c
+compiling app/tests/float_instructions.S
+compiling arch/arch.c
+compiling arch/test/mmu.cpp
+compiling dev/dev.c
+compiling dev/driver.c
+compiling dev/class/block_api.c
+compiling dev/class/i2c_api.c
+compiling dev/class/spi_api.c
+compiling dev/class/uart_api.c
+compiling dev/class/fb_api.c
+compiling dev/class/netif_api.c
+compiling dev/bus/pci/debug.cpp
+compiling dev/bus/pci/pci.cpp
+compiling dev/bus/pci/bus_mgr/bridge.cpp
+compiling dev/bus/pci/bus_mgr/bus.cpp
+In file included from dev/bus/pci/pci_priv.h:16,
+                 from dev/bus/pci/pci.cpp:19:
+dev/bus/pci/backend/ecam.h:35:23: warning: ‘unused’ attribute ignored [-Wattributes]
+   35 |     __UNUSED uint16_t segment_;
+      |                       ^~~~~~~~
+compiling dev/bus/pci/bus_mgr/bus_mgr.cpp
+compiling dev/bus/pci/bus_mgr/device.cpp
+compiling dev/bus/pci/bus_mgr/resource.cpp
+compiling dev/bus/pci/backend/ecam.cpp
+compiling dev/bus/pci/backend/bios32.cpp
+compiling dev/bus/pci/backend/type1.cpp
+compiling dev/interrupt/arm_gic/arm_gic.c
+In file included from dev/bus/pci/backend/ecam.cpp:9:
+dev/bus/pci/backend/ecam.h:35:23: warning: ‘unused’ attribute ignored [-Wattributes]
+   35 |     __UNUSED uint16_t segment_;
+      |                       ^~~~~~~~
+In file included from dev/bus/pci/backend/../pci_priv.h:16,
+                 from dev/bus/pci/backend/type1.cpp:20:
+dev/bus/pci/backend/../backend/ecam.h:35:23: warning: ‘unused’ attribute ignored [-Wattributes]
+   35 |     __UNUSED uint16_t segment_;
+      |                       ^~~~~~~~
+In file included from dev/bus/pci/backend/../pci_priv.h:16,
+                 from dev/bus/pci/backend/bios32.cpp:20:
+dev/bus/pci/backend/../backend/ecam.h:35:23: warning: ‘unused’ attribute ignored [-Wattributes]
+   35 |     __UNUSED uint16_t segment_;
+      |                       ^~~~~~~~
+compiling dev/power/psci/psci.c
+compiling dev/power/psci/psci_asm.S
+compiling dev/timer/arm_generic/arm_generic_timer.c
+compiling dev/uart/pl011/uart.c
+compiling dev/virtio/9p/client.c
+compiling dev/virtio/9p/virtio-9p.c
+compiling dev/virtio/9p/protocol.c
+compiling dev/virtio/block/virtio-block.c
+compiling dev/virtio/gpu/virtio-gpu.c
+compiling dev/virtio/net/virtio-net.c
+compiling kernel/debug.c
+compiling kernel/event.c
+compiling kernel/init.c
+compiling kernel/mutex.c
+compiling kernel/thread.c
+compiling kernel/timer.c
+compiling kernel/semaphore.c
+compiling kernel/mp.c
+compiling kernel/port.c
+compiling external/lib/aes/aes_core.c
+compiling external/lib/aes/test/aes_test.c
+compiling lib/cbuf/cbuf.c
+compiling external/lib/cksum/adler32.c
+compiling external/lib/cksum/crc16.c
+compiling external/lib/cksum/crc32.c
+compiling external/lib/cksum/debug.c
+compiling lib/debugcommands/debugcommands.c
+compiling lib/fdtwalk/fdtwalk.cpp
+compiling lib/fdtwalk/helpers.cpp
+compiling lib/fs/debug.c
+compiling lib/fs/fs.c
+compiling lib/fs/shell.c
+compiling lib/fs/9p/dir.c
+compiling lib/fs/9p/file.c
+compiling lib/fs/9p/v9fs.c
+compiling lib/fs/ext2/ext2.c
+compiling lib/fs/ext2/dir.c
+compiling lib/fs/ext2/io.c
+compiling lib/fs/ext2/file.c
+compiling lib/fs/fat/dir.cpp
+compiling lib/fs/fat/fat.cpp
+compiling lib/fs/fat/file.cpp
+compiling lib/fs/fat/file_iterator.cpp
+compiling lib/fs/fat/fs.cpp
+compiling lib/fs/memfs/memfs.c
+compiling lib/fs/spifs/spifs.c
+compiling lib/minip/arp.c
+compiling lib/minip/chksum.c
+compiling lib/minip/lk_console.c
+compiling lib/minip/minip.c
+compiling lib/minip/net_timer.c
+compiling lib/minip/pktbuf.c
+compiling lib/minip/tcp.c
+compiling lib/minip/udp.c
+compiling lib/minip/dhcp.cpp
+compiling lib/partition/partition.c
+compiling lib/uefi/uefi.cpp
+compiling lib/uefi/relocation.cpp
+compiling lib/uefi/text_protocol.cpp
+compiling lib/uefi/boot_service_provider.cpp
+compiling lib/uefi/memory_protocols.cpp
+compiling lib/uefi/blockio_protocols.cpp
+compiling lib/uefi/uefi_platform.cpp
+compiling lib/uefi/runtime_service_provider.cpp
+compiling lib/uefi/configuration_table.cpp
+compiling lib/uefi/switch_stack.S
+compiling lib/unittest/unittest.c
+compiling lib/unittest/all_tests.c
+compiling lib/version/version.c
+compiling platform/debug.c
+compiling platform/init.c
+compiling platform/power.c
+compiling target/init.c
+compiling dev/net/e1000/e1000.cpp
+compiling dev/virtio/virtio.c
+compiling kernel/vm/bootalloc.c
+compiling kernel/vm/pmm.c
+compiling kernel/vm/vm.c
+compiling kernel/vm/vmm.c
+compiling lib/bcache/bcache.c
+compiling lib/bio/bio.c
+compiling lib/bio/debug.c
+compiling lib/bio/mem.c
+compiling lib/bio/subdev.c
+compiling lib/console/console.c
+compiling lib/debug/debug.c
+compiling external/lib/fdt/fdt.c
+compiling external/lib/fdt/fdt_addresses.c
+compiling external/lib/fdt/fdt_check.c
+compiling external/lib/fdt/fdt_empty_tree.c
+compiling external/lib/fdt/fdt_overlay.c
+compiling external/lib/fdt/fdt_ro.c
+compiling external/lib/fdt/fdt_rw.c
+compiling external/lib/fdt/fdt_strerror.c
+compiling external/lib/fdt/fdt_sw.c
+compiling external/lib/fdt/fdt_wip.c
+compiling lib/fixed_point/fixed_point.c
+compiling lib/fs/fat/test/test.cpp
+compiling lib/fs/spifs/test/spifstest.c
+compiling lib/fs/test/test.c
+compiling lib/gfx/gfx.c
+compiling lib/heap/heap_wrapper.c
+compiling lib/heap/page_alloc.c
+compiling lib/iovec/iovec.c
+compiling lib/libc/abort.c
+compiling lib/libc/atexit.c
+compiling lib/libc/atoi.c
+compiling lib/libc/bsearch.c
+compiling lib/libc/ctype.c
+compiling lib/libc/errno.c
+compiling lib/libc/rand.c
+compiling lib/libc/strtol.c
+compiling lib/libc/strtoll.c
+compiling lib/libc/stdio.c
+compiling lib/libc/qsort.c
+compiling lib/libc/eabi.c
+compiling lib/libc/string/bcopy.c
+compiling lib/libc/string/bzero.c
+compiling lib/libc/string/memchr.c
+compiling lib/libc/string/memcmp.c
+compiling lib/libc/string/memcpy.c
+compiling lib/libc/string/memmove.c
+compiling lib/libc/string/memset.c
+compiling lib/libc/string/strcasecmp.c
+compiling lib/libc/string/strcat.c
+compiling lib/libc/string/strchr.c
+compiling lib/libc/string/strcmp.c
+compiling lib/libc/string/strcoll.c
+compiling lib/libc/string/strcpy.c
+compiling lib/libc/string/strdup.c
+compiling lib/libc/string/strerror.c
+compiling lib/libc/string/strlcat.c
+compiling lib/libc/string/strlcpy.c
+compiling lib/libc/string/strlen.c
+compiling lib/libc/string/strncat.c
+compiling lib/libc/string/strncpy.c
+compiling lib/libc/string/strncmp.c
+compiling lib/libc/string/strnicmp.c
+compiling lib/libc/string/strnlen.c
+compiling lib/libc/string/strpbrk.c
+compiling lib/libc/string/strrchr.c
+compiling lib/libc/string/strspn.c
+compiling lib/libc/string/strstr.c
+compiling lib/libc/string/strtok.c
+compiling lib/libc/string/strxfrm.c
+compiling lib/libc/printf.c
+compiling lib/libc/atof.c
+compiling lib/libcpp/new.cpp
+compiling lib/libcpp/pure_virtual.cpp
+compiling lib/pool/pool.c
+compiling lib/tftp/tftp.c
+compiling external/lib/heap/dlmalloc/dlmalloc.c
+compiling lib/io/console.c
+compiling lib/io/io.c
+compiling lib/libc/test/printf_tests.cpp
+compiling external/lib/libm/e_acos.c
+compiling external/lib/libm/e_acosf.c
+compiling external/lib/libm/e_asin.c
+compiling external/lib/libm/e_asinf.c
+compiling external/lib/libm/e_atan2.c
+compiling external/lib/libm/e_exp.c
+compiling external/lib/libm/e_fmod.c
+compiling external/lib/libm/e_log.c
+compiling external/lib/libm/e_pow.c
+compiling external/lib/libm/e_powf.c
+compiling external/lib/libm/e_sqrt.c
+compiling external/lib/libm/e_sqrtf.c
+compiling external/lib/libm/k_cos.c
+compiling external/lib/libm/k_rem_pio2.c
+compiling external/lib/libm/k_sin.c
+compiling external/lib/libm/k_tan.c
+compiling external/lib/libm/s_atan.c
+compiling external/lib/libm/s_ceil.c
+compiling external/lib/libm/s_ceilf.c
+compiling external/lib/libm/s_copysign.c
+compiling external/lib/libm/s_copysignf.c
+compiling external/lib/libm/s_cos.c
+compiling external/lib/libm/s_cosf.c
+compiling external/lib/libm/s_fabs.c
+compiling external/lib/libm/s_fabsf.c
+compiling external/lib/libm/s_floor.c
+compiling external/lib/libm/s_floorf.c
+compiling external/lib/libm/s_round.c
+compiling external/lib/libm/s_scalbn.c
+compiling external/lib/libm/s_scalbnf.c
+compiling external/lib/libm/s_sin.c
+compiling external/lib/libm/s_sinf.c
+compiling external/lib/libm/s_tan.c
+compiling external/lib/libm/s_tanf.c
+compiling external/lib/libm/s_trunc.c
+
+linking build-qemu-virt-arm64-test/platform/qemu-virt-arm.mod.o
+linking build-qemu-virt-arm64-test/arch/arm64.mod.o
+linking build-qemu-virt-arm64-test/top.mod.o
+linking build-qemu-virt-arm64-test/app.mod.o
+linking build-qemu-virt-arm64-test/app/inetsrv.mod.o
+linking build-qemu-virt-arm64-test/app/shell.mod.o
+linking build-qemu-virt-arm64-test/app/stringtests.mod.o
+linking build-qemu-virt-arm64-test/app/tests.mod.o
+linking build-qemu-virt-arm64-test/arch.mod.o
+linking build-qemu-virt-arm64-test/arch/test.mod.o
+linking build-qemu-virt-arm64-test/dev.mod.o
+linking build-qemu-virt-arm64-test/dev/bus/pci.mod.o
+linking build-qemu-virt-arm64-test/dev/interrupt/arm_gic.mod.o
+linking build-qemu-virt-arm64-test/dev/power/psci.mod.o
+linking build-qemu-virt-arm64-test/dev/timer/arm_generic.mod.o
+linking build-qemu-virt-arm64-test/dev/uart/pl011.mod.o
+linking build-qemu-virt-arm64-test/dev/virtio/9p.mod.o
+linking build-qemu-virt-arm64-test/dev/virtio/block.mod.o
+linking build-qemu-virt-arm64-test/dev/virtio/gpu.mod.o
+linking build-qemu-virt-arm64-test/dev/virtio/net.mod.o
+linking build-qemu-virt-arm64-test/kernel.mod.o
+linking build-qemu-virt-arm64-test/external/lib/aes.mod.o
+linking build-qemu-virt-arm64-test/external/lib/aes/test.mod.o
+linking build-qemu-virt-arm64-test/lib/cbuf.mod.o
+linking build-qemu-virt-arm64-test/external/lib/cksum.mod.o
+linking build-qemu-virt-arm64-test/lib/debugcommands.mod.o
+linking build-qemu-virt-arm64-test/lib/fdtwalk.mod.o
+linking build-qemu-virt-arm64-test/lib/fs.mod.o
+linking build-qemu-virt-arm64-test/lib/fs/9p.mod.o
+linking build-qemu-virt-arm64-test/lib/fs/ext2.mod.o
+linking build-qemu-virt-arm64-test/lib/fs/fat.mod.o
+linking build-qemu-virt-arm64-test/lib/fs/memfs.mod.o
+linking build-qemu-virt-arm64-test/lib/fs/spifs.mod.o
+linking build-qemu-virt-arm64-test/lib/minip.mod.o
+linking build-qemu-virt-arm64-test/lib/partition.mod.o
+linking build-qemu-virt-arm64-test/lib/uefi.mod.o
+linking build-qemu-virt-arm64-test/lib/unittest.mod.o
+linking build-qemu-virt-arm64-test/lib/version.mod.o
+linking build-qemu-virt-arm64-test/platform.mod.o
+linking build-qemu-virt-arm64-test/target.mod.o
+linking build-qemu-virt-arm64-test/dev/net/e1000.mod.o
+linking build-qemu-virt-arm64-test/dev/virtio.mod.o
+linking build-qemu-virt-arm64-test/kernel/vm.mod.o
+linking build-qemu-virt-arm64-test/lib/bcache.mod.o
+linking build-qemu-virt-arm64-test/lib/bio.mod.o
+linking build-qemu-virt-arm64-test/lib/console.mod.o
+linking build-qemu-virt-arm64-test/lib/debug.mod.o
+linking build-qemu-virt-arm64-test/external/lib/fdt.mod.o
+linking build-qemu-virt-arm64-test/lib/fixed_point.mod.o
+linking build-qemu-virt-arm64-test/lib/fs/fat/test.mod.o
+linking build-qemu-virt-arm64-test/lib/fs/spifs/test.mod.o
+linking build-qemu-virt-arm64-test/lib/fs/test.mod.o
+linking build-qemu-virt-arm64-test/lib/gfx.mod.o
+linking build-qemu-virt-arm64-test/lib/heap.mod.o
+linking build-qemu-virt-arm64-test/lib/iovec.mod.o
+linking build-qemu-virt-arm64-test/lib/libc.mod.o
+linking build-qemu-virt-arm64-test/lib/libcpp.mod.o
+linking build-qemu-virt-arm64-test/lib/pool.mod.o
+linking build-qemu-virt-arm64-test/lib/tftp.mod.o
+linking build-qemu-virt-arm64-test/lib/io.mod.o
+linking build-qemu-virt-arm64-test/lib/libc/test.mod.o
+linking build-qemu-virt-arm64-test/external/lib/libm.mod.o
+linking build-qemu-virt-arm64-test/external/lib/heap/dlmalloc.mod.o
+
+linking build-qemu-virt-arm64-test/lk.elf
+   text	   data	    bss	    dec	    hex	filename
+   1667	     88	      0	   1755	    6db	./build-qemu-virt-arm64-test/app.mod.o
+   2704	     40	      0	   2744	    ab8	./build-qemu-virt-arm64-test/app/inetsrv.mod.o
+    102	     40	      0	    142	     8e	./build-qemu-virt-arm64-test/app/shell.mod.o
+   3761	     56	     32	   3849	    f09	./build-qemu-virt-arm64-test/app/stringtests.mod.o
+  30399	    640	    268	  31307	   7a4b	./build-qemu-virt-arm64-test/app/tests.mod.o
+      0	      0	      0	      0	      0	./build-qemu-virt-arm64-test/arch.mod.o
+  15921	    436	  20528	  36885	   9015	./build-qemu-virt-arm64-test/arch/arm64.mod.o
+   6645	     40	      0	   6685	   1a1d	./build-qemu-virt-arm64-test/arch/test.mod.o
+   3243	      0	      0	   3243	    cab	./build-qemu-virt-arm64-test/dev.mod.o
+  28598	    304	    152	  29054	   717e	./build-qemu-virt-arm64-test/dev/bus/pci.mod.o
+   1805	     72	   3592	   5469	   155d	./build-qemu-virt-arm64-test/dev/interrupt/arm_gic.mod.o
+   4202	     24	     16	   4242	   1092	./build-qemu-virt-arm64-test/dev/net/e1000.mod.o
+    378	     56	      0	    434	    1b2	./build-qemu-virt-arm64-test/dev/power/psci.mod.o
+   2308	     48	     60	   2416	    970	./build-qemu-virt-arm64-test/dev/timer/arm_generic.mod.o
+   1090	      0	     96	   1186	    4a2	./build-qemu-virt-arm64-test/dev/uart/pl011.mod.o
+   2799	     24	      8	   2831	    b0f	./build-qemu-virt-arm64-test/dev/virtio.mod.o
+   9414	     16	      1	   9431	   24d7	./build-qemu-virt-arm64-test/dev/virtio/9p.mod.o
+   2968	      0	      1	   2969	    b99	./build-qemu-virt-arm64-test/dev/virtio/block.mod.o
+   3230	      0	      8	   3238	    ca6	./build-qemu-virt-arm64-test/dev/virtio/gpu.mod.o
+   4347	      0	      8	   4355	   1103	./build-qemu-virt-arm64-test/dev/virtio/net.mod.o
+  24272	      0	      0	  24272	   5ed0	./build-qemu-virt-arm64-test/external/lib/aes.mod.o
+   1145	     88	      0	   1233	    4d1	./build-qemu-virt-arm64-test/external/lib/aes/test.mod.o
+   5828	    152	      0	   5980	   175c	./build-qemu-virt-arm64-test/external/lib/cksum.mod.o
+  27006	    160	      0	  27166	   6a1e	./build-qemu-virt-arm64-test/external/lib/fdt.mod.o
+  28232	     56	   1040	  29328	   7290	./build-qemu-virt-arm64-test/external/lib/heap/dlmalloc.mod.o
+  29068	     32	      8	  29108	   71b4	./build-qemu-virt-arm64-test/external/lib/libm.mod.o
+  26790	    176	   4896	  31862	   7c76	./build-qemu-virt-arm64-test/kernel.mod.o
+  16795	    392	    136	  17323	   43ab	./build-qemu-virt-arm64-test/kernel/vm.mod.o
+   2523	      0	      0	   2523	    9db	./build-qemu-virt-arm64-test/lib/bcache.mod.o
+  12362	    128	      0	  12490	   30ca	./build-qemu-virt-arm64-test/lib/bio.mod.o
+   2750	      0	      0	   2750	    abe	./build-qemu-virt-arm64-test/lib/cbuf.mod.o
+   6616	    216	      0	   6832	   1ab0	./build-qemu-virt-arm64-test/lib/console.mod.o
+   1754	     64	      0	   1818	    71a	./build-qemu-virt-arm64-test/lib/debug.mod.o
+   4953	    632	     16	   5601	   15e1	./build-qemu-virt-arm64-test/lib/debugcommands.mod.o
+   7168	      0	    640	   7808	   1e80	./build-qemu-virt-arm64-test/lib/fdtwalk.mod.o
+      0	      0	      0	      0	      0	./build-qemu-virt-arm64-test/lib/fixed_point.mod.o
+  10536	    440	      8	  10984	   2ae8	./build-qemu-virt-arm64-test/lib/fs.mod.o
+   7215	    152	      0	   7367	   1cc7	./build-qemu-virt-arm64-test/lib/fs/9p.mod.o
+   4072	    152	      0	   4224	   1080	./build-qemu-virt-arm64-test/lib/fs/ext2.mod.o
+  11152	    216	      0	  11368	   2c68	./build-qemu-virt-arm64-test/lib/fs/fat.mod.o
+  10785	     40	      0	  10825	   2a49	./build-qemu-virt-arm64-test/lib/fs/fat/test.mod.o
+   2530	    152	      0	   2682	    a7a	./build-qemu-virt-arm64-test/lib/fs/memfs.mod.o
+   7908	    152	      0	   8060	   1f7c	./build-qemu-virt-arm64-test/lib/fs/spifs.mod.o
+   7138	    368	      0	   7506	   1d52	./build-qemu-virt-arm64-test/lib/fs/spifs/test.mod.o
+   6773	     40	      0	   6813	   1a9d	./build-qemu-virt-arm64-test/lib/fs/test.mod.o
+   7437	     56	      0	   7493	   1d45	./build-qemu-virt-arm64-test/lib/gfx.mod.o
+   5230	    128	      9	   5367	   14f7	./build-qemu-virt-arm64-test/lib/heap.mod.o
+   1200	     72	    344	   1616	    650	./build-qemu-virt-arm64-test/lib/io.mod.o
+    356	      0	      0	    356	    164	./build-qemu-virt-arm64-test/lib/iovec.mod.o
+  20447	    100	     24	  20571	   505b	./build-qemu-virt-arm64-test/lib/libc.mod.o
+  13827	     40	      0	  13867	   362b	./build-qemu-virt-arm64-test/lib/libc/test.mod.o
+    333	      0	      0	    333	    14d	./build-qemu-virt-arm64-test/lib/libcpp.mod.o
+  26743	    534	    232	  27509	   6b75	./build-qemu-virt-arm64-test/lib/minip.mod.o
+    989	      0	      0	    989	    3dd	./build-qemu-virt-arm64-test/lib/partition.mod.o
+    674	      0	      0	    674	    2a2	./build-qemu-virt-arm64-test/lib/pool.mod.o
+   1599	     18	      0	   1617	    651	./build-qemu-virt-arm64-test/lib/tftp.mod.o
+  16303	     56	     56	  16415	   401f	./build-qemu-virt-arm64-test/lib/uefi.mod.o
+   2286	    112	     16	   2414	    96e	./build-qemu-virt-arm64-test/lib/unittest.mod.o
+    430	    128	      0	    558	    22e	./build-qemu-virt-arm64-test/lib/version.mod.o
+   1414	     88	      0	   1502	    5de	./build-qemu-virt-arm64-test/platform.mod.o
+   1717	    128	      8	   1853	    73d	./build-qemu-virt-arm64-test/platform/qemu-virt-arm.mod.o
+    100	      0	      0	    100	     64	./build-qemu-virt-arm64-test/target.mod.o
+   2164	      0	     64	   2228	    8b4	./build-qemu-virt-arm64-test/top.mod.o
+ 494201	   7152	  32267	 533620	  82474	(TOTALS)
+
+generating image: build-qemu-virt-arm64-test/lk.bin
+generating listing: build-qemu-virt-arm64-test/lk.elf.lst
+generating listing: build-qemu-virt-arm64-test/lk.elf.debug.lst
+   text	   data	    bss	    dec	    hex	filename
+ 421652	   7576	  36384	 465612	  71acc	build-qemu-virt-arm64-test/lk.elf
+
+generating symbols: build-qemu-virt-arm64-test/lk.elf.sym
+generating sorted symbols: build-qemu-virt-arm64-test/lk.elf.sym.sorted
+generating size map: build-qemu-virt-arm64-test/lk.elf.size
+generating objdump: build-qemu-virt-arm64-test/lk.elf.dump
+generating build-qemu-virt-arm64-test/include_paths.txt
+generating build-qemu-virt-arm64-test/srcfiles.txt
+make[2]: Leaving directory '/workspaces/lk-code-walkthrough'
+make[1]: Leaving directory '/workspaces/lk-code-walkthrough'
+
+qemu-system-aarch64 -cpu cortex-a53 -m 512 -smp 1 -machine virt -kernel build-qemu-virt-arm64-test/lk.elf -net none -nographic
+Generic timer initialized with freq 62500000 Hz, irq 27
+FDT: found memory bank range [0x40000000, 0x5fffffff] (length 0x20000000)
+FDT: reserving physical range for FDT: [0x40000000, 0x400fffff]
+
+welcome to lk/MP from Pyjamabrahs!!
+
+boot args 0x0 0x0 0x0 0x0
+INIT: cpu 0, calling hook 0xffff00000012bd88 (version) at level 0x3ffff, flags 0x1
+version:
+	arch:     arm64
+	platform: qemu-virt-arm
+	target:   qemu-virt-arm
+	project:  qemu-virt-arm64-test
+	buildid:  O5I6F_LOCAL
+INIT: cpu 0, calling hook 0xffff00000012e480 (vm_preheap) at level 0x3ffff, flags 0x1
+initializing heap
+calling constructors
+INIT: cpu 0, calling hook 0xffff00000012e4d8 (vm) at level 0x4ffff, flags 0x1
+initializing mp
+initializing threads
+initializing timers
+initializing ports
+creating bootstrap completion thread
+top of bootstrap2()
+INIT: cpu 0, calling hook 0xffff000000114840 (mutex_threading_ready) at level 0x70000, flags 0x1
+INIT: cpu 0, calling hook 0xffff0000001253a0 (minip) at level 0x70000, flags 0x1
+INIT: cpu 0, calling hook 0xffff0000001261c0 (pktbuf) at level 0x70000, flags 0x1
+pktbuf: creating 256 pktbuf entries of size 1536 (total 393216)
+INIT: cpu 0, calling hook 0xffff00000012cc90 (virtio) at level 0x70000, flags 0x1
+creating bootstrap completion thread for cpu 1
+creating bootstrap completion thread for cpu 2
+creating bootstrap completion thread for cpu 3
+initializing platform
+FDT: found 1 cpu 
+PCIE: initializing pcie with ecam at 0x4010000000 found in FDT
+PCI: pci ecam functions installed
+PCI: last pci bus is 255
+PCI dump:
+  bus 0
+   dev 0000:00:00.0 vid:pid 1b36:0008 base:sub:intr 6:0:0 
+PCI dump post assign:
+  bus 0
+   dev 0000:00:00.0 vid:pid 1b36:0008 base:sub:intr 6:0:0 
+initializing target
+INIT: cpu 0, calling hook 0xffff00000012cb50 (e1000) at level 0x90001, flags 0x1
+initializing apps
+starting app inetsrv
+starting internet servers
+starting app shell
+entering main console loop
+] QEMU: Terminated
+
