@@ -68,7 +68,7 @@ GLOBAL_COMPILEFLAGS += -Wno-multichar -Wno-unused-parameter -Wno-unused-function
 GLOBAL_COMPILEFLAGS += -fno-common
 # Build with -ffreestanding since we are building an OS kernel and cannot
 # rely on all hosted environment functionality being present.
-GLOBAL_COMPILEFLAGS += -ffreestanding
+GLOBAL_COMPILEFLAGS += -ffreestanding -mno-outline-atomics
 GLOBAL_CFLAGS := --std=gnu11 -Werror-implicit-function-declaration -Wstrict-prototypes -Wwrite-strings
 GLOBAL_CPPFLAGS := --std=c++14 -fno-exceptions -fno-rtti -fno-threadsafe-statics
 GLOBAL_ASMFLAGS := -DASSEMBLY
